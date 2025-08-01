@@ -1,0 +1,93 @@
+body{ background-color: rgb(133, 154, 185);}
+
+#box{
+    background-color: rgba(103, 109, 118, 0.379);
+    width: max-content;
+    border-radius: 9px ;
+    display: flex;
+    flex-direction: column;
+    padding :10px;
+ }
+
+ .mar{
+    display:flex;
+    flex-direction: row;
+ } 
+ 
+ .special{background-image: url("bomb.png");
+ }
+  .boom{background-image: url("det.png");
+ }
+
+ .unu {
+   background-image: url("unu.png");
+   background-color: rgb(255, 240, 221);
+ }
+
+  .doi {
+   background-image: url("doi.png");
+   background-color: rgb(255, 215, 182);
+ }
+
+  .trei  {
+   background-image: url("trei.png");
+   background-color: rgba(255, 192, 163, 0.927);
+ }
+
+  .patru {
+   background-image: url("patru.png");
+   background-color: rgb(237, 152, 115);
+ }
+
+  .cinci {
+   background-image: url("cinci.png");
+   background-color: rgb(255, 140, 101);
+ }
+
+  .sase  {
+   background-image: url("sase.png");
+   background-color: rgb(250, 106, 66);
+ }
+
+  .sapte   {
+   background-image: url("sapte.png");
+   background-color: rgb(228, 78, 48);
+ }
+
+  .opt  {
+   background-image: url("opt.png");
+   background-color: rgb(212, 12, 12);
+ }
+
+
+  .zero  {
+   background-color: aliceblue;
+   
+ }
+
+  .pat{
+    
+    height: 20px;
+    width:20px;
+    margin:1.5px;
+    border-radius:2px;
+ }  
+
+
+ .cover{ 
+  background-color: bisque;
+ }
+
+
+ .steag {
+
+  background-image: url("steag.png");
+ }
+
+ .endgameWin{
+  background-color: aliceblue;
+  width:100px;              
+  height: auto;
+position: absolute;
+border-radius: 5px;
+ }
