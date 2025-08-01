@@ -43,7 +43,15 @@ function go ( ){
 if (ka()==nr&&n*m>nr) { gover=document.createElement("div");
 gover.classList.add("endgameWin")
 gover.innerText = "🎉 You Win!";
-document.body.appendChild(gover);}
+document.body.appendChild(gover);
+
+ for (let i = 0; i < n; i++) {
+  for (let j = 0; j < m; j++) {
+        pattr=a[i][j];
+        if(pattr.classList.contains("cover")){
+          pattr.classList.remove("cover");
+        }  }}
+ } 
 
 }
 
@@ -53,6 +61,14 @@ gover=document.createElement("div");
 gover.classList.add("endgameWin")
 gover.innerText = "🎉 You lose ! (penibil)";
 document.body.appendChild(gover);
+  for (let i = 0; i < n; i++) {
+  for (let j = 0; j < m; j++) {
+        pattr=a[i][j];
+        if(pattr.classList.contains("cover")){
+          pattr.classList.remove("cover");
+           pattr.classList.add("boom");
+        }  }
+ } 
 }
 
 function clk(i,j) {

@@ -75,12 +75,12 @@ body{ background-color: rgb(133, 154, 185);}
 
 
  .cover{ 
-  background-color: bisque;
+  background-image:url("cover.jpg");
  }
 
 
  .steag {
-
+background-color: bisque;
   background-image: url("steag.png");
  }
 
@@ -90,4 +90,16 @@ body{ background-color: rgb(133, 154, 185);}
   height: auto;
 position: absolute;
 border-radius: 5px;
+ }
+
+
+ input,button {
+
+background-color: rgba(225, 226, 255, 0.242);
+border-color: rgba(94, 103, 207, 0.728);
+border-radius: 10px;
+height:30px;
+width: 200px;
+margin: 10px;
+
  }
