@@ -3,6 +3,10 @@ let m,n,nr;
 let a=[];
 let k=0;
 
+let vedem= document.getElementById('vedem');
+let rezerva=vedem.innerHTML;
+
+
 let gover;
 function steag (i,j){
 
@@ -44,7 +48,7 @@ if (ka()==nr&&n*m>nr) { gover=document.createElement("div");
 gover.classList.add("endgameWin")
 gover.innerText = "🎉 You Win!";
 document.body.appendChild(gover);
-
+vedem.innerHTML=rezerva;
  for (let i = 0; i < n; i++) {
   for (let j = 0; j < m; j++) {
         pattr=a[i][j];
@@ -61,6 +65,7 @@ gover=document.createElement("div");
 gover.classList.add("endgameWin")
 gover.innerText = "🎉 You lose ! (penibil)";
 document.body.appendChild(gover);
+vedem.innerHTML=rezerva;
   for (let i = 0; i < n; i++) {
   for (let j = 0; j < m; j++) {
         pattr=a[i][j];
@@ -206,6 +211,41 @@ if(ni>=0&&nj>=0&&ni<n&&nj<m) {
     
     }
     }
-  
-  }
+
+
+vedem.innerHTML="<div id=arb></div><div id=coment></div>";
+let arb = document.getElementById("arb");
+let coment= document.getElementById("coment");
+
+let bg=[
+  "normal.png",
+  "sad.png",
+  "weh.png",
+  "happy.png",
+  "angy.png",
+  "bleh.png",
+];
+let text=[
+  "ngl, you cooked",
+  "better luck next time",
+  ".................",
+  "💣 Ai grijă la bombe!",
+  "mai încearcă odată să apeși random, poate ai noroc ",
+  "învață regulile mai întâi",
+];
+
+function scmb(){
+let rnd=Math.floor(Math.random()*bg.length);
+arb.style.backgroundImage=`url(${bg[rnd]})`;
+rnd =Math.floor(Math.random()*text.length);
+coment.innerText=text[rnd]};
+
+
+setInterval(scmb,10000);
+scmb();
+
+
+
+
+}
 

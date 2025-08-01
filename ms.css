@@ -75,7 +75,8 @@ body{ background-color: rgb(133, 154, 185);}
 
 
  .cover{ 
-  background-image:url("cover.jpg");
+  background-color: aqua;
+  /* background-image:url("cover.jpg"); */
  }
 
 
@@ -102,4 +103,27 @@ height:30px;
 width: 200px;
 margin: 10px;
 
+ }
+#vedem{
+  display: flex;
+  align-items: center;
+flex-direction: row;
+gap: 10px;;
+  
+}
+ #arb{
+width: 100px;
+height: 100px;
+  background-size: cover; 
+
+ }
+
+ #coment {
+background-color: antiquewhite;
+height:30px;
+width:auto;
+border-radius:70px;
+padding: 10px;
+margin-top: 30px;;
+border-top-left-radius: 0px;
  }
