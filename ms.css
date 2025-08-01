@@ -76,7 +76,7 @@ body{ background-color: rgb(133, 154, 185);}
 
  .cover{ 
   background-color: aqua;
-  /* background-image:url("cover.jpg"); */
+  background-image:url("cover.jpg"); 
  }
 
 
