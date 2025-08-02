@@ -2,14 +2,14 @@
 let m,n,nr;
 let a=[];
 let k=0;
-
+let box = document.getElementById('box');
+box.style.display="none";
 let vedem= document.getElementById('vedem');
 let rezerva=vedem.innerHTML;
 
 
 let gover;
 function steag (i,j){
-
 
 
 
@@ -147,7 +147,7 @@ function patrate(){
 if (gover) gover.remove();
   a = [];
 k=0;
-let box = document.getElementById('box');
+box.style.display="block";
  n=20;
  m=20;
 nr=25;
