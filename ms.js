@@ -69,7 +69,7 @@ vedem.innerHTML=rezerva;
   for (let i = 0; i < n; i++) {
   for (let j = 0; j < m; j++) {
         pattr=a[i][j];
-        if(pattr.classList.contains("cover")){
+        if(pattr.classList.contains("special")){
           pattr.classList.remove("cover");
            pattr.classList.add("boom");
         }  }
@@ -80,7 +80,10 @@ function clk(i,j) {
 
   let cell=a[i][j];
 
-if(ka()==m*n&&n*m>nr){
+
+if(ka()===m*n&&n*m>nr){
+
+  
 if(zerouri()>0){
 while(!cell.classList.contains("zero")){
 patrate ();
@@ -143,7 +146,18 @@ if(ni>=0&&nj>=0&&ni<n&&nj<m) {
     }
 
 
+
 function patrate(){
+
+  
+function scmb(){
+  vedem.innerHTML="<div id=arb></div><div id=coment></div>";
+let rnd=Math.floor(Math.random()*bg.length);
+arb.style.backgroundImage=`url(${bg[rnd]})`;
+rnd =Math.floor(Math.random()*text.length);
+coment.innerText=text[rnd];};
+
+
 if (gover) gover.remove();
   a = [];
 k=0;
@@ -212,8 +226,9 @@ if(ni>=0&&nj>=0&&ni<n&&nj<m) {
     }
     }
 
+  vedem.innerHTML="<div id=arb></div><div id=coment></div>";
+  
 
-vedem.innerHTML="<div id=arb></div><div id=coment></div>";
 let arb = document.getElementById("arb");
 let coment= document.getElementById("coment");
 
@@ -235,10 +250,12 @@ let text=[
 ];
 
 function scmb(){
+
 let rnd=Math.floor(Math.random()*bg.length);
 arb.style.backgroundImage=`url(${bg[rnd]})`;
 rnd =Math.floor(Math.random()*text.length);
-coment.innerText=text[rnd]};
+coment.innerText=text[rnd];};
+
 
 
 setInterval(scmb,10000);
